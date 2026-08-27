@@ -1,0 +1,2423 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Scauts Pakistan | Premium T-Shirts</title>
+
+  <meta
+    name="description"
+    content="Scauts Pakistan - Premium T-Shirts, modern fashion and easy WhatsApp ordering in Pakistan."
+  >
+
+  <meta
+    name="keywords"
+    content="Scauts Pakistan, T-Shirts Pakistan, Scauts clothing, premium t-shirts, online clothing Pakistan"
+  >
+
+  <meta name="author" content="Scauts Pakistan">
+
+  <style>
+
+    /* =========================
+       RESET
+    ========================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      background: #ffffff;
+      color: #111111;
+      line-height: 1.5;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+
+    /* =========================
+       COLORS
+       =========================
+       BLACK  = #111111
+       ORANGE = #ff6b00
+       WHITE  = #ffffff
+    ========================= */
+
+    :root {
+      --black: #111111;
+      --dark-black: #070707;
+      --orange: #ff6b00;
+      --orange-dark: #e85d00;
+      --light-orange: #fff3e8;
+      --white: #ffffff;
+      --gray: #777777;
+      --light-gray: #f7f7f7;
+      --border: #e8e8e8;
+    }
+
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+
+      background: rgba(255,255,255,0.97);
+
+      backdrop-filter: blur(15px);
+
+      border-bottom:
+        1px solid var(--border);
+    }
+
+    .navbar {
+      max-width: 1250px;
+      height: 78px;
+
+      margin: auto;
+
+      padding:
+        0 25px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content:
+        space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+
+      font-weight: 900;
+
+      letter-spacing: 2px;
+
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: var(--orange);
+    }
+
+    .nav-links {
+      list-style: none;
+
+      display: flex;
+
+      gap: 30px;
+
+      font-size: 14px;
+
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--orange);
+    }
+
+    .nav-buttons {
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+    }
+
+    .cart-button {
+      border: none;
+
+      background: var(--black);
+
+      color: white;
+
+      padding:
+        12px 18px;
+
+      border-radius: 30px;
+
+      font-weight: 700;
+
+      transition: .3s;
+    }
+
+    .cart-button:hover {
+      background: var(--orange);
+      transform: translateY(-2px);
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 680px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      color: white;
+
+      padding: 40px 20px;
+
+      background:
+        linear-gradient(
+          rgba(0,0,0,.72),
+          rgba(0,0,0,.72)
+        ),
+        url(
+          "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=2000&q=90"
+        )
+        center / cover no-repeat;
+
+      border-bottom: 5px solid var(--orange);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero-label {
+      letter-spacing: 5px;
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      color: var(--orange);
+    }
+
+    .hero h1 {
+      font-size:
+        clamp(50px, 10vw, 110px);
+
+      line-height: .9;
+
+      margin:
+        25px 0;
+
+      font-weight: 900;
+
+      letter-spacing: -5px;
+    }
+
+    .hero p {
+      max-width: 650px;
+
+      margin:
+        0 auto 35px;
+
+      font-size: 18px;
+
+      color: #ddd;
+    }
+
+    .hero-buttons {
+      display: flex;
+
+      justify-content: center;
+
+      gap: 12px;
+
+      flex-wrap: wrap;
+    }
+
+    .primary-button {
+      display: inline-block;
+
+      background: var(--orange);
+
+      color: white;
+
+      padding:
+        15px 28px;
+
+      border-radius: 40px;
+
+      font-weight: 800;
+
+      transition: .3s;
+
+      box-shadow:
+        0 8px 25px rgba(255,107,0,.25);
+    }
+
+    .primary-button:hover {
+      transform:
+        translateY(-4px);
+
+      background: var(--orange-dark);
+    }
+
+    .dark-button {
+      display: inline-block;
+
+      background: transparent;
+
+      color: white;
+
+      border:
+        1px solid white;
+
+      padding:
+        14px 28px;
+
+      border-radius: 40px;
+
+      font-weight: 800;
+
+      transition: .3s;
+    }
+
+    .dark-button:hover {
+      background: white;
+      color: var(--black);
+    }
+
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
+    .section {
+      max-width: 1250px;
+
+      margin: auto;
+
+      padding:
+        90px 25px;
+    }
+
+    .section-heading {
+      text-align: center;
+
+      margin-bottom: 50px;
+    }
+
+    .section-heading span {
+      font-size: 12px;
+
+      color: var(--orange);
+
+      letter-spacing: 4px;
+
+      font-weight: 800;
+    }
+
+    .section-heading h2 {
+      font-size: 45px;
+
+      margin-top: 10px;
+    }
+
+    .section-heading p {
+      max-width: 650px;
+
+      margin:
+        12px auto 0;
+
+      color: var(--gray);
+    }
+
+
+    /* =========================
+       PRODUCTS
+    ========================= */
+
+    .products {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 25px;
+    }
+
+    .product {
+      background: white;
+
+      border-radius: 18px;
+
+      overflow: hidden;
+
+      border:
+        1px solid var(--border);
+
+      transition: .3s;
+
+      box-shadow:
+        0 5px 20px rgba(0,0,0,.03);
+    }
+
+    .product:hover {
+      transform:
+        translateY(-8px);
+
+      border-color:
+        rgba(255,107,0,.35);
+
+      box-shadow:
+        0 20px 50px
+        rgba(0,0,0,.10);
+    }
+
+    .product-image {
+      height: 350px;
+
+      overflow: hidden;
+
+      background: #eee;
+    }
+
+    .product-image img {
+      width: 100%;
+
+      height: 100%;
+
+      object-fit: cover;
+
+      transition: .5s;
+    }
+
+    .product:hover
+    .product-image img {
+      transform:
+        scale(1.06);
+    }
+
+    .product-content {
+      padding: 20px;
+    }
+
+    .product-content h3 {
+      font-size: 18px;
+
+      margin-bottom: 7px;
+    }
+
+    .product-content p {
+      color: #777;
+
+      font-size: 13px;
+
+      margin-bottom: 15px;
+    }
+
+    .product-price {
+      font-size: 21px;
+
+      font-weight: 900;
+
+      margin-bottom: 15px;
+
+      color: var(--orange);
+    }
+
+    .add-cart {
+      width: 100%;
+
+      border: none;
+
+      background: var(--black);
+
+      color: white;
+
+      padding: 13px;
+
+      border-radius: 8px;
+
+      font-weight: 800;
+
+      transition: .3s;
+    }
+
+    .add-cart:hover {
+      background: var(--orange);
+    }
+
+
+    /* =========================
+       FEATURES
+    ========================= */
+
+    .features {
+      background: var(--black);
+
+      color: white;
+
+      border-top:
+        4px solid var(--orange);
+
+      border-bottom:
+        4px solid var(--orange);
+    }
+
+    .feature-container {
+      max-width: 1250px;
+
+      margin: auto;
+
+      padding:
+        70px 25px;
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 30px;
+    }
+
+    .feature {
+      text-align: center;
+
+      padding: 20px;
+    }
+
+    .feature-icon {
+      font-size: 38px;
+
+      margin-bottom: 15px;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: #999;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 60px;
+
+      align-items: center;
+    }
+
+    .about-image {
+      border-radius: 20px;
+
+      overflow: hidden;
+
+      border:
+        5px solid var(--black);
+
+      box-shadow:
+        0 20px 50px rgba(0,0,0,.12);
+    }
+
+    .about-image img {
+      width: 100%;
+
+      height: 550px;
+
+      object-fit: cover;
+    }
+
+    .about-content span {
+      color: var(--orange);
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      letter-spacing: 3px;
+    }
+
+    .about-content h2 {
+      font-size: 48px;
+
+      line-height: 1.05;
+
+      margin:
+        12px 0 20px;
+    }
+
+    .about-content p {
+      color: #666;
+
+      line-height: 1.8;
+
+      margin-bottom: 15px;
+    }
+
+    .ceo-box {
+      margin-top: 25px;
+
+      padding: 20px;
+
+      background: var(--black);
+
+      color: white;
+
+      border-radius: 12px;
+
+      border-left:
+        5px solid var(--orange);
+    }
+
+    .ceo-box small {
+      color: var(--orange);
+    }
+
+    .ceo-box h3 {
+      margin-top: 8px;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-section {
+      background: var(--light-orange);
+
+      border-top:
+        1px solid #ffe0c7;
+
+      border-bottom:
+        1px solid #ffe0c7;
+    }
+
+    .contact-box {
+      max-width: 850px;
+
+      margin: auto;
+
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-size: 45px;
+
+      margin-bottom: 15px;
+    }
+
+    .contact-box p {
+      color: #666;
+
+      margin-bottom: 25px;
+    }
+
+    .whatsapp-main {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      background: var(--orange);
+
+      color: white;
+
+      padding:
+        15px 28px;
+
+      border-radius: 40px;
+
+      font-weight: 800;
+
+      transition: .3s;
+
+      box-shadow:
+        0 10px 30px rgba(255,107,0,.25);
+    }
+
+    .whatsapp-main:hover {
+      background: var(--black);
+
+      transform:
+        translateY(-3px);
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: var(--dark-black);
+
+      color: white;
+
+      padding:
+        70px 25px 25px;
+
+      border-top:
+        4px solid var(--orange);
+    }
+
+    .footer-container {
+      max-width: 1250px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns:
+        2fr 1fr 1fr;
+
+      gap: 50px;
+    }
+
+    footer h2 {
+      margin-bottom: 15px;
+    }
+
+    footer h4 {
+      margin-bottom: 18px;
+
+      color: var(--orange);
+    }
+
+    footer p,
+    footer a {
+      color: #999;
+
+      font-size: 14px;
+    }
+
+    footer a {
+      display: block;
+
+      margin-bottom: 10px;
+    }
+
+    footer a:hover {
+      color: var(--orange);
+    }
+
+    .copyright {
+      max-width: 1250px;
+
+      margin:
+        50px auto 0;
+
+      padding-top: 20px;
+
+      border-top:
+        1px solid #222;
+
+      color: #666;
+
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       FLOATING WHATSAPP
+    ========================= */
+
+    .floating-whatsapp {
+      position: fixed;
+
+      right: 22px;
+
+      bottom: 22px;
+
+      width: 62px;
+
+      height: 62px;
+
+      border-radius: 50%;
+
+      background: var(--orange);
+
+      color: white;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 28px;
+
+      z-index: 9998;
+
+      box-shadow:
+        0 8px 30px
+        rgba(255,107,0,.40);
+
+      transition: .3s;
+    }
+
+    .floating-whatsapp:hover {
+      transform:
+        scale(1.1);
+
+      background: var(--black);
+    }
+
+
+    /* =========================
+       CART OVERLAY
+    ========================= */
+
+    .cart-overlay {
+      position: fixed;
+
+      inset: 0;
+
+      background:
+        rgba(0,0,0,.65);
+
+      z-index: 10000;
+
+      display: none;
+    }
+
+    .cart-overlay.active {
+      display: block;
+    }
+
+    .cart {
+      position: absolute;
+
+      top: 0;
+
+      right: 0;
+
+      width:
+        min(450px, 100%);
+
+      height: 100%;
+
+      background: white;
+
+      padding: 25px;
+
+      overflow-y: auto;
+
+      border-left:
+        4px solid var(--orange);
+    }
+
+    .cart-header {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      margin-bottom: 25px;
+    }
+
+    .close-cart {
+      border: none;
+
+      background: #eee;
+
+      width: 38px;
+
+      height: 38px;
+
+      border-radius: 50%;
+
+      font-size: 22px;
+
+      transition: .3s;
+    }
+
+    .close-cart:hover {
+      background: var(--orange);
+
+      color: white;
+    }
+
+    .cart-item {
+      display: flex;
+
+      gap: 15px;
+
+      padding:
+        15px 0;
+
+      border-bottom:
+        1px solid #eee;
+    }
+
+    .cart-item img {
+      width: 75px;
+
+      height: 85px;
+
+      object-fit: cover;
+
+      border-radius: 8px;
+    }
+
+    .cart-item-details {
+      flex: 1;
+    }
+
+    .cart-item-details h4 {
+      margin-bottom: 5px;
+    }
+
+    .cart-item-price {
+      font-weight: 700;
+
+      color: var(--orange);
+    }
+
+    .quantity {
+      display: flex;
+
+      align-items: center;
+
+      gap: 9px;
+
+      margin-top: 10px;
+    }
+
+    .quantity button {
+      width: 27px;
+
+      height: 27px;
+
+      border:
+        1px solid #ddd;
+
+      background: white;
+
+      border-radius: 5px;
+
+      transition: .2s;
+    }
+
+    .quantity button:hover {
+      background: var(--orange);
+
+      color: white;
+
+      border-color: var(--orange);
+    }
+
+    .remove-item {
+      border: none;
+
+      background: transparent;
+
+      color: red;
+
+      font-size: 12px;
+
+      margin-top: 7px;
+    }
+
+    .cart-total {
+      display: flex;
+
+      justify-content: space-between;
+
+      margin-top: 25px;
+
+      padding-top: 20px;
+
+      border-top:
+        2px solid var(--black);
+
+      font-size: 21px;
+
+      font-weight: 900;
+    }
+
+    .checkout-button {
+      width: 100%;
+
+      border: none;
+
+      background: var(--orange);
+
+      color: white;
+
+      padding: 15px;
+
+      margin-top: 20px;
+
+      border-radius: 8px;
+
+      font-weight: 900;
+
+      font-size: 15px;
+
+      transition: .3s;
+    }
+
+    .checkout-button:hover {
+      background: var(--black);
+    }
+
+    .empty-cart {
+      text-align: center;
+
+      color: #888;
+
+      padding: 50px 0;
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media(max-width: 950px) {
+
+      .products {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image img {
+        height: 450px;
+      }
+
+      .feature-container {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+      }
+
+    }
+
+
+    @media(max-width: 650px) {
+
+      .navbar {
+        height: 68px;
+
+        padding:
+          0 15px;
+      }
+
+      .logo {
+        font-size: 19px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .cart-button {
+        padding:
+          10px 13px;
+
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 600px;
+      }
+
+      .hero h1 {
+        font-size: 55px;
+
+        letter-spacing: -3px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .section {
+        padding:
+          65px 15px;
+      }
+
+      .section-heading h2 {
+        font-size: 34px;
+      }
+
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .product-image {
+        height: 420px;
+      }
+
+      .about-content h2 {
+        font-size: 36px;
+      }
+
+      .contact-box h2 {
+        font-size: 34px;
+      }
+
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- ==========================================
+       NAVIGATION
+  =========================================== -->
+
+  <header>
+
+    <nav class="navbar">
+
+      <a
+        href="#home"
+        class="logo"
+      >
+        SCAUTS <span>PAKISTAN</span>
+      </a>
+
+
+      <ul class="nav-links">
+
+        <li>
+          <a href="#home">
+            HOME
+          </a>
+        </li>
+
+        <li>
+          <a href="#shop">
+            SHOP
+          </a>
+        </li>
+
+        <li>
+          <a href="#about">
+            ABOUT
+          </a>
+        </li>
+
+        <li>
+          <a href="#contact">
+            CONTACT
+          </a>
+        </li>
+
+      </ul>
+
+
+      <div class="nav-buttons">
+
+        <button
+          class="cart-button"
+          onclick="openCart()"
+        >
+          🛒 CART
+          (<span id="cartCount">0</span>)
+        </button>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- ==========================================
+       HERO
+  =========================================== -->
+
+  <section
+    class="hero"
+    id="home"
+  >
+
+    <div class="hero-content">
+
+      <div class="hero-label">
+        OFFICIAL SCAUTS PAKISTAN
+      </div>
+
+
+      <h1>
+        WEAR<br>
+        YOUR STYLE.
+      </h1>
+
+
+      <p>
+        Premium quality T-shirts made for
+        modern Pakistan. Clean designs,
+        comfortable fabrics and confident style.
+      </p>
+
+
+      <div class="hero-buttons">
+
+        <a
+          href="#shop"
+          class="primary-button"
+        >
+          SHOP NOW →
+        </a>
+
+
+        <a
+          href="#about"
+          class="dark-button"
+        >
+          ABOUT US
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================
+       SHOP
+  =========================================== -->
+
+  <section
+    class="section"
+    id="shop"
+  >
+
+    <div class="section-heading">
+
+      <span>
+        SCAUTS PAKISTAN COLLECTION
+      </span>
+
+      <h2>
+        Latest T-Shirts
+      </h2>
+
+      <p>
+        Discover our premium collection.
+        Select your favourite product and
+        order directly through WhatsApp.
+      </p>
+
+    </div>
+
+
+    <div class="products">
+
+
+      <!-- PRODUCT 1 -->
+
+      <div class="product">
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=90"
+            alt="Scauts Pakistan Black Oversized T-Shirt"
+          >
+
+        </div>
+
+
+        <div class="product-content">
+
+          <h3>
+            Black Oversized T-Shirt
+          </h3>
+
+          <p>
+            Premium cotton • Oversized Fit
+          </p>
+
+          <div class="product-price">
+            Rs. 1,299
+          </div>
+
+
+          <button
+            class="add-cart"
+            onclick="addToCart(
+              'Black Oversized T-Shirt',
+              1299,
+              'https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=90'
+            )"
+          >
+            ADD TO CART
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PRODUCT 2 -->
+
+      <div class="product">
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=90"
+            alt="Scauts Pakistan White T-Shirt"
+          >
+
+        </div>
+
+
+        <div class="product-content">
+
+          <h3>
+            Classic White T-Shirt
+          </h3>
+
+          <p>
+            Heavy Cotton • Regular Fit
+          </p>
+
+          <div class="product-price">
+            Rs. 1,199
+          </div>
+
+
+          <button
+            class="add-cart"
+            onclick="addToCart(
+              'Classic White T-Shirt',
+              1199,
+              'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=90'
+            )"
+          >
+            ADD TO CART
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PRODUCT 3 -->
+
+      <div class="product">
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=900&q=90"
+            alt="Scauts Pakistan Grey T-Shirt"
+          >
+
+        </div>
+
+
+        <div class="product-content">
+
+          <h3>
+            Essential Grey T-Shirt
+          </h3>
+
+          <p>
+            Soft Cotton • Everyday Wear
+          </p>
+
+          <div class="product-price">
+            Rs. 1,099
+          </div>
+
+
+          <button
+            class="add-cart"
+            onclick="addToCart(
+              'Essential Grey T-Shirt',
+              1099,
+              'https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=900&q=90'
+            )"
+          >
+            ADD TO CART
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PRODUCT 4 -->
+
+      <div class="product">
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=900&q=90"
+            alt="Scauts Pakistan Signature Black T-Shirt"
+          >
+
+        </div>
+
+
+        <div class="product-content">
+
+          <h3>
+            Signature Black T-Shirt
+          </h3>
+
+          <p>
+            Premium Fabric • Street Fit
+          </p>
+
+          <div class="product-price">
+            Rs. 1,399
+          </div>
+
+
+          <button
+            class="add-cart"
+            onclick="addToCart(
+              'Signature Black T-Shirt',
+              1399,
+              'https://images.unsplash.com/photo-1583743814966-8936f37f4678?auto=format&fit=crop&w=900&q=90'
+            )"
+          >
+            ADD TO CART
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PRODUCT 5 -->
+
+      <div class="product">
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=90"
+            alt="Scauts Pakistan Fashion T-Shirt"
+          >
+
+        </div>
+
+
+        <div class="product-content">
+
+          <h3>
+            Urban Premium Tee
+          </h3>
+
+          <p>
+            Premium Fabric • Modern Fit
+          </p>
+
+          <div class="product-price">
+            Rs. 1,499
+          </div>
+
+
+          <button
+            class="add-cart"
+            onclick="addToCart(
+              'Urban Premium Tee',
+              1499,
+              'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=90'
+            )"
+          >
+            ADD TO CART
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PRODUCT 6 -->
+
+      <div class="product">
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=90"
+            alt="Scauts Pakistan Casual T-Shirt"
+          >
+
+        </div>
+
+
+        <div class="product-content">
+
+          <h3>
+            Everyday Casual Tee
+          </h3>
+
+          <p>
+            Soft Fabric • Casual Fit
+          </p>
+
+          <div class="product-price">
+            Rs. 1,249
+          </div>
+
+
+          <button
+            class="add-cart"
+            onclick="addToCart(
+              'Everyday Casual Tee',
+              1249,
+              'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=90'
+            )"
+          >
+            ADD TO CART
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PRODUCT 7 -->
+
+      <div class="product">
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=90"
+            alt="Scauts Pakistan Premium Fashion"
+          >
+
+        </div>
+
+
+        <div class="product-content">
+
+          <h3>
+            Premium Street Tee
+          </h3>
+
+          <p>
+            Heavy Cotton • Oversized
+          </p>
+
+          <div class="product-price">
+            Rs. 1,499
+          </div>
+
+
+          <button
+            class="add-cart"
+            onclick="addToCart(
+              'Premium Street Tee',
+              1499,
+              'https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=90'
+            )"
+          >
+            ADD TO CART
+          </button>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- PRODUCT 8 -->
+
+      <div class="product">
+
+        <div class="product-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=90"
+            alt="Scauts Pakistan Classic T-Shirt"
+          >
+
+        </div>
+
+
+        <div class="product-content">
+
+          <h3>
+            Classic Street T-Shirt
+          </h3>
+
+          <p>
+            Premium Cotton • Classic Fit
+          </p>
+
+          <div class="product-price">
+            Rs. 1,299
+          </div>
+
+
+          <button
+            class="add-cart"
+            onclick="addToCart(
+              'Classic Street T-Shirt',
+              1299,
+              'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=90'
+            )"
+          >
+            ADD TO CART
+          </button>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================
+       FEATURES
+  =========================================== -->
+
+  <section class="features">
+
+    <div class="feature-container">
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          🚚
+        </div>
+
+        <h3>
+          Fast Delivery
+        </h3>
+
+        <p>
+          Reliable delivery across Pakistan.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          👕
+        </div>
+
+        <h3>
+          Premium Quality
+        </h3>
+
+        <p>
+          Comfortable and quality fabrics
+          for everyday wear.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          💬
+        </div>
+
+        <h3>
+          WhatsApp Ordering
+        </h3>
+
+        <p>
+          Order your favourite T-shirt
+          directly through WhatsApp.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================
+       ABOUT
+  =========================================== -->
+
+  <section
+    class="section"
+    id="about"
+  >
+
+    <div class="about">
+
+
+      <div class="about-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1100&q=90"
+          alt="Scauts Pakistan Fashion"
+        >
+
+      </div>
+
+
+      <div class="about-content">
+
+        <span>
+          ABOUT SCAUTS PAKISTAN
+        </span>
+
+        <h2>
+          Built For Your Everyday Style.
+        </h2>
+
+        <p>
+          Scauts Pakistan is a modern clothing
+          brand focused on premium T-shirts,
+          comfortable fabrics and contemporary
+          fashion.
+        </p>
+
+        <p>
+          Our mission is simple:
+          create clothing that looks good,
+          feels comfortable and represents
+          your personal style.
+        </p>
+
+
+        <div class="ceo-box">
+
+          
+          <small>
+            COMPANY LEADERSHIP
+          </small>
+
+          <h3>
+            Founder & CEO — Hasham Ul Haq
+          </h3>
+
+          <h3>
+            Co-Founder — Muhhamad Ammar
+          </h3>
+
+          <h3>
+            CEO — Asad Shahbaz
+          </h3>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================
+       CONTACT
+  =========================================== -->
+
+  <section
+    class="section contact-section"
+    id="contact"
+  >
+
+    <div class="contact-box">
+
+      <div class="section-heading">
+
+        <span>
+          CONTACT SCAUTS PAKISTAN
+        </span>
+
+        <h2>
+          Ready To Order?
+        </h2>
+
+        <p>
+          Contact us on WhatsApp and
+          place your order quickly.
+        </p>
+
+      </div>
+
+
+      <a
+        href="#"
+        id="mainWhatsapp"
+        class="whatsapp-main"
+        target="_blank"
+      >
+        💬 ORDER ON WHATSAPP
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ==========================================
+       FOOTER
+  =========================================== -->
+
+  <footer>
+
+    <div class="footer-container">
+
+
+      <div>
+
+        <h2>
+          SCAUTS PAKISTAN
+        </h2>
+
+        <p>
+          Premium T-shirts for modern
+          Pakistani fashion lovers.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          QUICK LINKS
+        </h4>
+
+        <a href="#home">
+          Home
+        </a>
+
+        <a href="#shop">
+          Shop
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          MANAGEMENT
+        </h4>
+
+        <p>
+          Founder & CEO — Hasham Ul Haq
+        </p>
+
+        <p>
+          Co-Founder — Muhammad Ammar
+        </p>
+
+        <p>
+          CEO — Asad Shahbaz
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Scauts Pakistan.
+      All Rights Reserved.
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ==========================================
+       FLOATING WHATSAPP
+  =========================================== -->
+
+  <a
+    href="#"
+    id="floatingWhatsapp"
+    class="floating-whatsapp"
+    target="_blank"
+    aria-label="WhatsApp"
+  >
+    💬
+  </a>
+
+
+
+  <!-- ==========================================
+       CART
+  =========================================== -->
+
+  <div
+    class="cart-overlay"
+    id="cartOverlay"
+  >
+
+    <div class="cart">
+
+
+      <div class="cart-header">
+
+        <h2>
+          Your Cart
+        </h2>
+
+        <button
+          class="close-cart"
+          onclick="closeCart()"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <div id="cartItems">
+      </div>
+
+
+      <div class="cart-total">
+
+        <span>
+          Total
+        </span>
+
+        <span>
+          Rs.
+          <span id="cartTotal">
+            0
+          </span>
+        </span>
+
+      </div>
+
+
+      <button
+        class="checkout-button"
+        onclick="orderOnWhatsApp()"
+      >
+        💬 ORDER ON WHATSAPP
+      </button>
+
+
+    </div>
+
+  </div>
+
+
+
+  <script>
+
+    /* ==================================================
+       WHATSAPP NUMBER
+       
+       +92 312 4695764
+       WhatsApp format:
+       923124695764
+    ================================================== */
+
+    const WHATSAPP_NUMBER =
+      "923124695764";
+
+
+    /* ==================================================
+       CART
+    ================================================== */
+
+    let cart = [];
+
+
+    function addToCart(
+      name,
+      price,
+      image
+    ) {
+
+      const existing =
+        cart.find(
+          item =>
+            item.name === name
+        );
+
+
+      if (existing) {
+
+        existing.quantity++;
+
+      } else {
+
+        cart.push({
+
+          name:
+            name,
+
+          price:
+            price,
+
+          image:
+            image,
+
+          quantity:
+            1
+
+        });
+
+      }
+
+
+      updateCart();
+
+      openCart();
+
+    }
+
+
+
+    function updateCart() {
+
+      const container =
+        document.getElementById(
+          "cartItems"
+        );
+
+      const count =
+        document.getElementById(
+          "cartCount"
+        );
+
+      const totalElement =
+        document.getElementById(
+          "cartTotal"
+        );
+
+
+      container.innerHTML = "";
+
+
+      let total = 0;
+
+      let totalItems = 0;
+
+
+      if (cart.length === 0) {
+
+        container.innerHTML = `
+
+          <div class="empty-cart">
+
+            Your cart is empty.
+
+            <br><br>
+
+            Add a T-shirt to continue.
+
+          </div>
+
+        `;
+
+      }
+
+
+      cart.forEach(
+        (item, index) => {
+
+          const itemTotal =
+            item.price *
+            item.quantity;
+
+
+          total += itemTotal;
+
+          totalItems +=
+            item.quantity;
+
+
+          container.innerHTML += `
+
+            <div class="cart-item">
+
+              <img
+                src="${item.image}"
+                alt="${item.name}"
+              >
+
+              <div
+                class="cart-item-details"
+              >
+
+                <h4>
+                  ${item.name}
+                </h4>
+
+                <div
+                  class="cart-item-price"
+                >
+                  Rs.
+                  ${item.price.toLocaleString()}
+                </div>
+
+
+                <div
+                  class="quantity"
+                >
+
+                  <button
+                    onclick="changeQuantity(
+                      ${index},
+                      -1
+                    )"
+                  >
+                    -
+                  </button>
+
+
+                  <span>
+                    ${item.quantity}
+                  </span>
+
+
+                  <button
+                    onclick="changeQuantity(
+                      ${index},
+                      1
+                    )"
+                  >
+                    +
+                  </button>
+
+                </div>
+
+
+                <button
+                  class="remove-item"
+                  onclick="removeItem(
+                    ${index}
+                  )"
+                >
+                  Remove
+                </button>
+
+              </div>
+
+            </div>
+
+          `;
+
+        }
+      );
+
+
+      count.textContent =
+        totalItems;
+
+
+      totalElement.textContent =
+        total.toLocaleString();
+
+    }
+
+
+
+    function changeQuantity(
+      index,
+      amount
+    ) {
+
+      cart[index].quantity +=
+        amount;
+
+
+      if (
+        cart[index].quantity <= 0
+      ) {
+
+        cart.splice(
+          index,
+          1
+        );
+
+      }
+
+
+      updateCart();
+
+    }
+
+
+
+    function removeItem(index) {
+
+      cart.splice(
+        index,
+        1
+      );
+
+      updateCart();
+
+    }
+
+
+
+    /* ==================================================
+       CART OPEN / CLOSE
+    ================================================== */
+
+    function openCart() {
+
+      document
+        .getElementById(
+          "cartOverlay"
+        )
+        .classList.add(
+          "active"
+        );
+
+    }
+
+
+    function closeCart() {
+
+      document
+        .getElementById(
+          "cartOverlay"
+        )
+        .classList.remove(
+          "active"
+        );
+
+    }
+
+
+
+    /* ==================================================
+       WHATSAPP ORDER
+    ================================================== */
+
+    function orderOnWhatsApp() {
+
+      if (
+        cart.length === 0
+      ) {
+
+        alert(
+          "Please add a product to your cart first."
+        );
+
+        return;
+
+      }
+
+
+      let message =
+        "Hello Scauts Pakistan!\n\n" +
+        "I want to place an order.\n\n";
+
+
+      let total = 0;
+
+
+      cart.forEach(
+        item => {
+
+          const itemTotal =
+            item.price *
+            item.quantity;
+
+
+          total +=
+            itemTotal;
+
+
+          message +=
+
+            "• " +
+            item.name +
+            " × " +
+            item.quantity +
+            " = Rs. " +
+            itemTotal.toLocaleString() +
+            "\n";
+
+        }
+      );
+
+
+      message +=
+
+        "\n" +
+        "TOTAL: Rs. " +
+        total.toLocaleString() +
+        "\n\n" +
+
+        "Please confirm my order.\n" +
+
+        "Name:\n" +
+        "Address:\n" +
+        "Phone:";
+
+
+      const whatsappURL =
+
+        "https://wa.me/" +
+        WHATSAPP_NUMBER +
+        "?text=" +
+        encodeURIComponent(message);
+
+
+      window.open(
+        whatsappURL,
+        "_blank"
+      );
+
+    }
+
+
+
+    /* ==================================================
+       WHATSAPP BUTTONS
+    ================================================== */
+
+    const whatsappMessage =
+      "Hello Scauts Pakistan! I want to place an order.";
+
+
+    const whatsappURL =
+      "https://wa.me/" +
+      WHATSAPP_NUMBER +
+      "?text=" +
+      encodeURIComponent(
+        whatsappMessage
+      );
+
+
+    document.getElementById(
+      "mainWhatsapp"
+    ).href =
+      whatsappURL;
+
+
+    document.getElementById(
+      "floatingWhatsapp"
+    ).href =
+      whatsappURL;
+
+
+
+    /* ==================================================
+       CLOSE CART WHEN CLICKING OUTSIDE
+    ================================================== */
+
+    document
+      .getElementById(
+        "cartOverlay"
+      )
+      .addEventListener(
+        "click",
+        function(event) {
+
+          if (
+            event.target ===
+            this
+          ) {
+
+            closeCart();
+
+          }
+
+        }
+      );
+
+
+    /* ==================================================
+       INITIAL CART
+    ================================================== */
+
+    updateCart();
+
+  </script>
+
+</body>
+</html>
